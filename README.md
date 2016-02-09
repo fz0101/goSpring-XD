@@ -16,6 +16,15 @@ Features to be added.
 Support for other data formats that are supported in PHD. 
 Docker support
 Pivotal Cloud Foundry support. 
+Hypermedia - for discoverable layer. 
+
+
+Usage
+
+127.0.0.1:8080/API/.status
+127.0.0.1:8080/API/Integration/springxdsink
+
+
 
 
 API - Built in GoLang

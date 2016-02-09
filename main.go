@@ -56,10 +56,11 @@ func main() {
 	api.Use(MWstats)
 	api.Use(rest.DefaultDevStack...)
 	router, err := rest.MakeRouter(
-		rest.Get("/.status", func(w rest.ResponseWriter, r *rest.Request) {
+		rest.Get("API/.status", func(w rest.ResponseWriter, r *rest.Request) {
 			w.WriteJson(MWstats.GetStatus())
 		}),
-		rest.Post("/springxdsink", springxdsink),
+		// Root is API, Integration is self explanatory, gives api more structure.
+		rest.Post("API/Integration/springxdsink", springxdsink),
 	)
 	if err != nil {
 		log.Fatal(err)
