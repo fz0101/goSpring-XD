@@ -1,6 +1,8 @@
 # goSpring-XD
 Gets around WebHDFS, by created a sink API
 
+Fernando Zavala - Pivotal Software
+
 Use Case:
 
 Need to access data from a data lake, that lives in a kerberized hadoop system. 
@@ -21,11 +23,8 @@ Hypermedia - for discoverable layer.
 
 Usage
 
-127.0.0.1:8080/API/.status
+127.0.0.1:8080/API/.status <br>
 127.0.0.1:8080/API/Integration/springxdsink
-
-
-
 
 API - Built in GoLang
 
